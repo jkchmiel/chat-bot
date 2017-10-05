@@ -11,7 +11,7 @@ def homepage():
     return "<h1>Hello heroku</h1><p>Python: {ver}</p>".format(ver=sys.version)
 
 
-@app.route('/webhook')
+@app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
     req_dump = json.dumps(req, indent=4)
