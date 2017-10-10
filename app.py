@@ -2,7 +2,7 @@
 from flask import Flask,  make_response, request, render_template
 import sys
 import json
-
+from helpers import ResponseGenerator
 app = Flask(__name__)
 
 
@@ -17,7 +17,7 @@ def webhook():
     req_dump = json.dumps(req, indent=4)
     print('Request:\n{0}'.format(req_dump))
 
-    speech = 'gwóźdź'
+    speech = ResponseGenerator.generate_response(req)
     response = {
         "speech": speech,
         "displayText": speech,
@@ -32,7 +32,6 @@ def webhook():
     r = make_response(response)
     r.headers['Content-Type'] = 'application/json'
     return r
-
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)

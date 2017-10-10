@@ -1,0 +1,38 @@
+{
+  "id": "f9c3cf80-bf81-4984-94c0-9f9c4a4ba793",
+  "timestamp": "2017-10-10T11:27:24.8Z",
+  "lang": "en",
+  "result": {
+    "source": "agent",
+    "resolvedQuery": "Fed official says weak data caused by weather, should not slow taper",
+    "action": "unknown",
+    "actionIncomplete": false,
+    "parameters": {},
+    "contexts": [],
+    "metadata": {
+      "intentId": "6d243f33-349c-4d90-bd49-374382b0075c",
+      "webhookUsed": "true",
+      "webhookForSlotFillingUsed": "false",
+      "webhookResponseTime": 162,
+      "intentName": "99 default_fallback_intent"
+    },
+    "fulfillment": {
+      "speech": "gwóźdź",
+      "source": "mr-muscle-bot",
+      "displayText": "gwóźdź",
+      "messages": [
+        {
+          "type": 0,
+          "id": "4067b94e-725d-43df-b35f-462364fceb6e",
+          "speech": "gwóźdź"
+        }
+      ]
+    },
+    "score": 1
+  },
+  "status": {
+    "code": 200,
+    "errorType": "success"
+  },
+  "sessionId": "050eea51-161e-46b5-97ac-beb1fcd44985"
+}
